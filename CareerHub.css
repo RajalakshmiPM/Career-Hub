@@ -1,0 +1,206 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:ghostwhite;
+    padding:0px;
+    height: 100%;
+    
+}
+
+html{
+    height: 100%;
+}
+
+.box1{
+    height:50px;
+    width:100%;
+    position:relative;
+    background-color:slategray;
+   
+}
+
+.box1 ul{
+    list-style-type: none;
+    float: right;
+    
+}
+
+.box1 ul li{
+    display:inline-block;
+    font-size: 1.5em;
+    line-height: 50px;
+    
+}
+
+.box1 ul li a{    
+    text-decoration: none;
+    color:ghostwhite;
+    padding:15px 20px;   
+}
+
+.box1 ul li a:hover{
+    color:darkgray;
+    transition: 0.5s ease;
+}
+
+.dropdown ul{
+    color: aliceblue;
+    background-color: black;
+}
+
+.dropdown ul li{
+    list-style-type: none;
+    
+}
+
+.wrapper{
+    min-height: 100%;
+    width:100%;
+    position:relative;
+}
+
+h2{
+    padding: 50px;
+    background: #112233;
+    color:whitesmoke;
+    font-family: big john;
+    text-align: center;
+    font-size: 30pt;
+    letter-spacing: 15px;
+}
+
+.navigationDesktop{
+    background: slategray;
+}
+
+nav{
+    height: 40px;
+    
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 400px;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight:300; 
+    color:whitesmoke;
+}
+
+nav a:hover{
+    background: green;
+    color:antiquewhite;
+}
+
+nav ul{
+    list-style: none;
+    
+}
+
+nav ul li{
+    float:left;
+    width: 200px;
+    height:40px;
+    line-height: 40px;
+    background: slategray;
+    
+    
+}
+
+nav ul ul li{
+    position: relative;
+    display: none;
+}
+
+nav ul ul ul{
+    display: none;
+    
+}
+
+nav ul li:hover ul li{
+    display:block;
+    animation: navmenu 500ms forwards;
+}
+
+@keyframes navmenu{
+    0%{
+        opacity: 0;
+        top: 5px;
+    }
+    100%{
+       opacity: 1;
+        top: 0px; 
+    }
+}
+
+nav ul ul li:hover ul{
+    display: block;
+    position: absolute;
+    width: 140px;
+    left:140px;
+    top:0px;
+} 
+
+.hr{
+    height:10px;
+    width:100%;
+    background-color:lightskyblue;   
+}  
+
+.box2{
+    height:400px;
+    width:50%;
+    line-height: 70px;
+    font-size: 1.5em;
+    background-image: url("career3.jpg");
+    background-repeat:no-repeat;
+    background-position: bottom;   
+}
+
+h1{
+    transform: translate(130px,250px);
+}
+
+.mainhead{
+    height:500px;
+    width:800px;
+    transform: translate(20px, 0px);   
+}
+
+article{
+    height: 3000px;
+    width: 800px;
+    text-align: justify;
+    font-size: 1.5em;
+    font-family:Bookman old style;
+    display: block;
+    transform:translate(300px, -450px);
+    padding: 10px;
+    line-height: 40px;
+    
+}  
+
+footer{
+    border-top: 2px solid white;
+    position:absolute;
+    bottom: 0px;
+    padding: 20px;
+    width:100%;
+    text-align: center;
+    background: #112233;
+    color:aliceblue;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size:11px;
+    text-transform: uppercase;
+}
+
+
